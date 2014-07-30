@@ -1,0 +1,45 @@
+
+tr.tr1 td.td1 {
+  height: 60px;
+  width: 60px;
+  background-color: white;
+}
+
+tr.tr0 td.td1 {
+  height: 60px;
+  width: 60px;
+  background-color: black;
+}
+
+tr.tr1 td.td0 {
+  height: 60px;
+  width: 60px;
+  background-color: black;
+}
+
+tr.tr0 td.td0 {
+  height: 60px;
+  width: 60px;
+  background-color: white;
+}
+
+tr:nth-of-type(2n + 6) td.td0 {
+  background-image: url('/images/facebookfarmvillefreakdecocheckerblackicon.png');
+  background-size: cover;
+}
+
+tr:nth-of-type(7) td.td1 {
+  background-image: url('/images/facebookfarmvillefreakdecocheckerblackicon.png');
+  background-size: cover;
+}
+
+tr:nth-last-of-type(2n + 6)) td.td1 {
+  background-image: url('/images/v154102-slimline-backgammon-checker-red32.jpg');
+  background-size: cover;
+}
+
+tr:nth-last-of-type(7) td.td0 {
+  background-image: url('/images/v154102-slimline-backgammon-checker-red32.jpg');
+  background-size: cover;
+}
+

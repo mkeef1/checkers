@@ -11,9 +11,11 @@ app.use(morgan('dev'));
 app.use(express.static(__dirname + '/static'));
 
 app.get('/', function(req, res){
-  res.render('home');
+  res.render('home.ejs');
 });
 
-app.listen(process.env.PORT, function(){
+var port = process.env.PORT;
+
+app.listen(port, function(){
   console.log('Express is listening...');
 });
