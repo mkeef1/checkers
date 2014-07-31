@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Roll Dice</title>
+    <link rel="stylesheet" href="/css/style2.css">
+  </head>
+  <body>
+    <table>
+      <% for(var i = 0; i < rolls.length; i++) {%>
+        <tr>
+          <td style:"background-image:url(/images/<% rolls[i] %>.png);">
+          </td>
+        </tr>
+      <% } %>  
+    </table>
+  </body>
+</html>

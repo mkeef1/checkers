@@ -48,6 +48,25 @@ app.get('/sum_list/:nums', function(req, res){
   res.render('sum_list', {nums:nums, sum:sum, even:req.query.even, odd:req.query.odd});
 });
 
+app.get('/rolldice/:x', function(req, res){
+  var rolls = [];
+  var sum = 0;
+
+  for(var i = 0;i < req.params.x; i++){
+    rolls.push(Math.floor(Math.random()*6) + 1);
+    }
+
+  for(var j = 0; j < rolls.length; j++){
+    sum += rolls[j];
+  }
+
+  req.params.rolls = rolls;
+  req.params.sum = sum;
+
+  res.render('rolldice', req.params);
+});
+
+
 var port = process.env.PORT;
 
 app.listen(port, function(){
